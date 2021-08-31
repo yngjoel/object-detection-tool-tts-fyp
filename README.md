@@ -1,3 +1,4 @@
+![](https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)
 # A tool to support blind people in detecting objects and obstacles via voice notification 
 This project aims to help visually impaired people in having a more private and convenient life by providing them their own eyes with the use of object Detection with voice feedback.
 
