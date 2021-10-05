@@ -30,7 +30,7 @@ START - YOLOv4 Network
 
 # COCO Labels file
 # Read the labels in coco.names file
-with open('yolo-coco-data/coco.names')as f:
+with open('yolo-coco-data/coco.names') as f:
     labels = [line.strip() for line in f]
 
 network = cv2.dnn.readNetFromDarknet('yolo-coco-data\yolov4.cfg', 'yolo-coco-data\yolov4.weights')
@@ -41,10 +41,10 @@ layers_names_output = \
     [layers_names_all[i[0] - 1] for i in network.getUnconnectedOutLayers()]
 
 # probability to eliminate weak predictions
-probability_minimum = 0.7
+probability_minimum = 0.5
 
 # non-maximum supression (filter weak bounding boxes)
-threshold = 0.3 
+threshold = 0.3
 
 colours = np.random.randint(0, 255, size=(len(labels), 3), dtype='uint8')
 
@@ -64,8 +64,8 @@ while True:
     """
     START - Blob of current frames
     """
-    blob = cv2.dnn.blobFromImage(frame, 1 /255.0, (416,416), 
-                                swapRB=True, crop = False)
+    blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (416, 416),
+                                 swapRB=True, crop=False)
     
     """
     END - Blob of current frames
@@ -74,12 +74,12 @@ while True:
     """
     START - Forward pass implementation
     """
-    network.setInput(blob)
+    network.setInput(blob)  # setting blob as input to the network
     start = time.time()
     output_from_network = network.forward(layers_names_output)
     end = time.time()
 
-    print('Current Frame took {:.5f} seconds'.format(end -start))
+    print('Current frame took {:.5f} seconds'.format(end - start))
 
     """
     END - Forward pass implementation
@@ -111,11 +111,11 @@ while True:
                 #YOLO format, get coordinates from top left corner (x_min and y_min)
                 x_center, y_center, box_width, box_height = box_current
                 x_min = int(x_center - (box_width / 2))
-                y_min = int(y_center - (box_width / 2))
+                y_min = int(y_center - (box_height / 2))
 
                 # Adding results into prepared lists
-                bounding_boxes,append([x_min, y_min,
-                                    int(box_width), int(box_height)])
+                bounding_boxes.append([x_min, y_min,
+                                       int(box_width), int(box_height)])
                 confidences.append(float(confidence_current))
                 class_numbers.append(class_current)
 
@@ -128,7 +128,8 @@ while True:
     """
     # Implementing non-maximum suppression of given bounding boxes
     #bounding boxes are excluded if it has low cc or same region bb has higher confidence
-    results = cv2.dnn.NMSBoxes(bounding_boxes, confidences, probability_minimum, threshold)
+    results = cv2.dnn.NMSBoxes(bounding_boxes, confidences,
+                               probability_minimum, threshold)
 
     """
     END - Non-maximum supression
@@ -148,16 +149,16 @@ while True:
             colour_box_current = colours[class_numbers[i]].tolist()
 
             # Drawing bounding box on the original current frame
-            cv2.rectangle(frame, (x_min, y_min), 
-                            (x_min + box_width, y_min + box_height), 
-                            colour_box_current, 2)
+            cv2.rectangle(frame, (x_min, y_min),
+                          (x_min + box_width, y_min + box_height),
+                          colour_box_current, 2)
             
             # Preparing text with label and confidence for current bounding box
             text_box_current = '{}: {:.4f}'.format(labels[int(class_numbers[i])],
-                                                    confidences[i])
+                                                   confidences[i])
         
             # Putting text with label and confidence on the original image
-            cv2.putText(frames, text_box_current, (x_min, y_min - 5), 
+            cv2.putText(frame, text_box_current, (x_min, y_min - 5),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, colour_box_current, 2)
 
     """
