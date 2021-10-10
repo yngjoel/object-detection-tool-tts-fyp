@@ -8,6 +8,14 @@ Object Detection in real time with YOLOv4 and OpenCV
 import numpy as np
 import cv2
 import time
+import os
+import imutils
+import subprocess
+from gtts import gTTS 
+from pydub import AudioSegment
+from pydub.playback import play
+from playsound import playsound
+AudioSegment.converter = "C:/Program Files/ffmpeg/ffmpeg.exe"
 
 """
 START - stream object detection camera
@@ -131,6 +139,8 @@ while True:
     results = cv2.dnn.NMSBoxes(bounding_boxes, confidences,
                                probability_minimum, threshold)
 
+    texts = []
+
     """
     END - Non-maximum supression
     """
@@ -160,7 +170,33 @@ while True:
             # Putting text with label and confidence on the original image
             cv2.putText(frame, text_box_current, (x_min, y_min - 5),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, colour_box_current, 2)
+            
+            #Position of detected objects (TTS)
+            if x_center <= w/3:
+                w_pos = "left "
+            elif x_center <= (w/3 * 2):
+                w_pos = "center "
+            else:
+                w_pos = "right "
+            
+            if y_center <= h/3:
+                h_pos = "top "
+            elif y_center <= (h/3 * 2):
+                h_pos = "mid "
+            else:
+                h_pos = "bottom "
+            
+            texts.append(h_pos + w_pos + labels[class_numbers[i]])
+    
+    print(texts)
 
+    if texts:
+        description = ', '.join(texts)
+        tts = gTTS(description, lang='en')
+        tts.save('gTTS.mp3')
+        playsound("gTTS.mp3")
+        os.remove("gTTS.mp3")
+    
     """
     END - Draw bounding boxes and labels
     """
