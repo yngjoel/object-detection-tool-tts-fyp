@@ -1,5 +1,4 @@
-![](https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)
-picture by fabio, unsplash
+![](https://emoji.gg/assets/emoji/9879_hackerman.gif)
 # A tool to support blind people in detecting objects and obstacles via voice notification 
 This project aims to help visually impaired people in having a more private and convenient life by providing them their own eyes with the use of object Detection with voice feedback.
 
@@ -9,52 +8,30 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-The things you need before installing the software.
+The things you need before start using the web application
 
-* You need this
-* And you need this
-* Oh, and don't forget this
+* Any IDE (Preferred: Visual Studio Code)
+* First install latest version of python: https://www.python.org/downloads/
+* FFMPEG: https://ffmpeg.org/download.html
 
 ### Installation
 
-A step by step guide that will tell you how to get the development environment up and running.
-
+A step by step guide that will tell you how to get the required libraries to run the application
 ```
-$ First step
-$ Another step
-$ Final step
+$ python get-pip.py
+//if error occurs when installing opencv, use this command instead *pip install opencv-python-headless
+$ pip install opencv-python
+$ pip install numpy
+$ pip install os-win
+$ pip install pyttsx3
+$ pip install pydub
+$ pip install imutils
 ```
 
 ## Usage
 
-A few examples of useful commands and/or tasks.
+This command is used to start the Flask Server and web application
 
 ```
-$ First example
-$ Second example
-$ And keep this in mind
+$test.py
 ```
-
-## Deployment
-
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
-
-### Server
-
-* Live:
-* Release:
-* Development:
-
-### Branches
-
-* Master:
-* Feature:
-* Bugfix:
-* etc...
-
-## Additional Documentation and Acknowledgments
-
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
