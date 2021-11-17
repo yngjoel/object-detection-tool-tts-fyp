@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 The things you need before start using the web application
 
 * Any IDE (Preferred: Visual Studio Code)
-* First install latest version of python: https://www.python.org/downloads/
+* Install latest version of python: https://www.python.org/downloads/
 * FFMPEG: https://ffmpeg.org/download.html
 
 ### Installation
