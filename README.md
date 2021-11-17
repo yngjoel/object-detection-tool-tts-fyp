@@ -27,6 +27,7 @@ $ pip install pyttsx3
 $ pip install pydub
 $ pip install imutils
 ```
+* Get [YOLOv4 Weight](https://drive.google.com/file/d/1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT/view?usp=drive_open) file and place it into yolo-coco-data folder
 
 ## Usage
 
