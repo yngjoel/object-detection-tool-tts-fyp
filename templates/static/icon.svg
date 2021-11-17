@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151" height="151" viewBox="0 0 151 151">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.47" x2="0.5" y2="1.022" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd500"/>
+      <stop offset="1" stop-color="#f70"/>
+    </linearGradient>
+  </defs>
+  <g id="Icon_Frame" data-name="Icon Frame">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="151" height="151" rx="33" fill="#fff"/>
+  </g>
+  <g id="Group_4" data-name="Group 4" transform="translate(-162.773 -558.5)">
+    <g id="_14_-_Document" data-name="14 - Document" transform="translate(210.773 603.5)">
+      <path id="Path_238" data-name="Path 238" d="M44.647,1.835A2.023,2.023,0,0,0,43.008,1H8.356A6.081,6.081,0,0,0,2.273,7.083V55.744a6.082,6.082,0,0,0,6.083,6.083h43.5a6.082,6.082,0,0,0,6.083-6.083V20.769a2.032,2.032,0,0,0-.387-1.192L44.647,1.835Zm-2.672,3.22L53.882,21.427V55.744a2.027,2.027,0,0,1-2.028,2.028H8.356a2.027,2.027,0,0,1-2.028-2.028V7.083A2.028,2.028,0,0,1,8.356,5.055Z" transform="translate(-2.273 -1)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Path_239" data-name="Path 239" d="M8.119,11.419H26.182a2.028,2.028,0,0,0,0-4.055H8.119a2.028,2.028,0,0,0,0,4.055Z" transform="translate(1.65 5.539)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Path_240" data-name="Path 240" d="M36.293,21.644H25.419V3.028a2.028,2.028,0,1,0-4.055,0V23.672A2.027,2.027,0,0,0,23.392,25.7h12.9a2.028,2.028,0,0,0,0-4.055Z" transform="translate(17.344 -1)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Path_241" data-name="Path 241" d="M8.119,17.782H26.182a2.028,2.028,0,0,0,0-4.055H8.119a2.028,2.028,0,1,0,0,4.055Z" transform="translate(1.65 12.077)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Path_242" data-name="Path 242" d="M8.119,23.51h25.8a2.028,2.028,0,0,0,0-4.055H8.119a2.028,2.028,0,0,0,0,4.055Z" transform="translate(1.65 17.963)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

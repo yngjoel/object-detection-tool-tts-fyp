@@ -1,0 +1,36 @@
+body {
+    background-color: #FFF2F2;
+}
+
+.main_set{
+    color: #FFD15B;
+}
+
+@media screen and (max-width: 2400px){
+    .cam-des{
+        margin-top: 150px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .cam-des{
+        margin-top: 100px;
+        max-width: 300px;
+    }
+
+    .icon-cam{
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cam-des{
+        margin-top: 0px;
+        max-width: 300px;
+    }
+
+    .icon-cam{
+        max-width: 130px;
+    }
+}

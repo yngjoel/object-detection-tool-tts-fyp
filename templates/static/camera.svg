@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151" height="151" viewBox="0 0 151 151">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd500"/>
+      <stop offset="1" stop-color="#f70"/>
+    </linearGradient>
+  </defs>
+  <g id="Icon_Frame" data-name="Icon Frame">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="151" height="151" rx="33" fill="#fff"/>
+  </g>
+  <g id="Group_1" data-name="Group 1" transform="translate(-430.053 -577.913)">
+    <g id="_08_-_Camera" data-name="08 - Camera" transform="translate(463.053 622.913)">
+      <path id="Path_230" data-name="Path 230" d="M85.478,16.446A8.449,8.449,0,0,0,77.03,8H9.446A8.449,8.449,0,0,0,1,16.446V52.494a8.447,8.447,0,0,0,8.447,8.447H77.03a8.447,8.447,0,0,0,8.447-8.447V16.446Zm-5.632,0V52.494a2.815,2.815,0,0,1-2.816,2.816H9.446a2.815,2.815,0,0,1-2.816-2.816V16.446a2.815,2.815,0,0,1,2.816-2.816H77.03a2.815,2.815,0,0,1,2.816,2.816Z" transform="translate(-0.999 -0.115)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Path_231" data-name="Path 231" d="M43.4,13.083V10.831A5.63,5.63,0,0,0,37.769,5.2H27.633A5.63,5.63,0,0,0,22,10.831v2.253a5.63,5.63,0,0,0,5.632,5.632H37.769A5.63,5.63,0,0,0,43.4,13.083ZM27.633,10.831v2.253H37.769V10.831Z" transform="translate(37.136 -5.199)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Path_232" data-name="Path 232" d="M25.442,12.2A14.643,14.643,0,1,0,40.084,26.842,14.649,14.649,0,0,0,25.442,12.2Zm0,5.632a9.012,9.012,0,1,1-9.01,9.01A9.015,9.015,0,0,1,25.442,17.832Z" transform="translate(16.797 7.513)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
